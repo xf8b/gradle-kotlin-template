@@ -15,7 +15,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     java // language
-    kotlin("jvm") version "1.6.10" // language
+    kotlin("jvm") version "1.6.20" // language
 }
 
 group = "com.example"
