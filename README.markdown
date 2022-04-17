@@ -6,13 +6,21 @@ A template for creating Gradle projects that use Kotlin.
 
 ## Instructions
 
-1. Create a repository based on the template.
+1. Create a repository based on this template.
 2. Remove the following folders and files:
    1. `COPYING.text`
    2. `README.markdown`
-3. Change the Gradle files (`build.gradle.kts`, `settings.gradle.kts`) to have the correct project name and
+3. Remove the following lines in `.gitignore`:
+
+```gitignore
+# Delete the line below!
+.idea/
+# Delete the line above!
+```
+
+4. Change the Gradle files (`build.gradle.kts`, `settings.gradle.kts`) to have the correct project name and
    dependencies.
-4. You're done!
+5. You're done!
 
 ## License
 
