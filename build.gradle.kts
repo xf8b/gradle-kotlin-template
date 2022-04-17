@@ -1,8 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    java // language
-    kotlin("jvm") version "1.6.20" // language
+    java
+    kotlin("jvm") version "1.6.20"
 }
 
 group = "com.example"
@@ -14,8 +14,8 @@ repositories {
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.8.2")) // testing
-    testImplementation("org.junit.jupiter:junit-jupiter") // testing
+    testImplementation(platform("org.junit:junit-bom:5.8.2")) // JUnit bill of materials
+    testImplementation("org.junit.jupiter:junit-jupiter") // JUnit Jupiter
 }
 
 kotlin {
