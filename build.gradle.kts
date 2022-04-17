@@ -18,8 +18,9 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter") // testing
 }
 
-java {
-    toolchain {
+kotlin {
+    jvmToolchain {
+        this as JavaToolchainSpec
         languageVersion.set(JavaLanguageVersion.of(17)) // require Java 17
         vendor.set(JvmVendorSpec.ADOPTIUM) // get a JDK from Adoptium if none are found
     }
