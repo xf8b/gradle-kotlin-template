@@ -8,30 +8,11 @@ A template for creating Gradle projects that use Kotlin.
 
 1. Create a repository based on the template.
 2. Remove the following folders and files:
-   1. `.idea`
-   2. `.gitignore`
-   3. `COPYING.text`
-   4. `README.markdown`
-3. Remove the copyright headers at the top of the files (see below for example).
-
-```kotlin
-/*
- * gradle-kotlin-template - a template for creating Gradle projects that use Kotlin
- * Written in 2022 by xf8b.
- *
- * To the extent possible under law, the author(s) have dedicated all copyright
- * and related and neighboring rights to this software to the public domain worldwide.
- *
- * This software is distributed without any warranty.
- *
- * You should have received a copy of the CC0 Public Domain Dedication along with this software.
- * If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
- */
-```
-
-4. Change the Gradle files (`build.gradle.kts`, `settings.gradle.kts`) to have the correct project name and
+   1. `COPYING.text`
+   2. `README.markdown`
+3. Change the Gradle files (`build.gradle.kts`, `settings.gradle.kts`) to have the correct project name and
    dependencies.
-5. You're done!
+4. You're done!
 
 ## License
 
