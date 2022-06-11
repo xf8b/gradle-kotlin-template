@@ -1,8 +1,6 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
     java
-    kotlin("jvm") version "1.6.21"
+    kotlin("jvm") version "1.7.0"
 }
 
 group = "com.example"
@@ -20,18 +18,16 @@ dependencies {
 
 kotlin {
     jvmToolchain {
-        this as JavaToolchainSpec
-
-        languageVersion.set(JavaLanguageVersion.of(17)) // require Java 17
+        languageVersion.set(JavaLanguageVersion.of(18)) // require Java 18
         vendor.set(JvmVendorSpec.ADOPTIUM) // get a JDK from Adoptium if none are found
     }
 }
 
 tasks {
-    withType<KotlinCompile>().configureEach {
+    withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
         kotlinOptions {
-            jvmTarget = "17" // target JVM 17
-            languageVersion = "1.6" // be compatible with Kotlin 1.6
+            // target the current java version used (which should be Java 18)
+            jvmTarget = JavaVersion.current().toString()
         }
     }
 
